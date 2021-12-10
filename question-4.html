@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+
+            background: radial-gradient( #b62b49 , #a8faaf);
+        }
+       
+       
+        input,select{
+            position:relative;
+            width:100%;
+            padding:6px;
+            margin:4px 0px 0px 0px;
+            border:1px solid red;
+            border-radius: 4px;
+           
+        }
+        .form{
+            width:500px;
+            display: block;
+            margin:23px auto;
+            padding:23px 43px;
+            background: rgba(247, 157, 242, 0.664);
+            box-shadow:0px 0px 5px;
+            border-radius: 6px;
+           
+        }
+
+        .box-inline input{
+            display: inline-block;
+            width:auto;
+            padding:12px;
+            border:1px solid red;
+            border-radius: 4px;
+
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 7px;
+            color:black;
+            letter-spacing: 1px;
+        }
+        .box-inline {
+          border: 1px solid #ccc;
+          padding: 8px 10px 4px;
+          border-radius: 2px;
+          border:1px solid red;
+          border-radius: 4px;
+          margin:4px 0;
+          background-color: #fff;
+        }
+        .box{
+            margin:10px 0px;
+        }
+        .error{
+            margin-top:-2px;
+            color:red;
+        }
+        input[type="submit"],input[type="reset"]{
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size:14px;
+            padding:7px;
+        }
+        input[type="submit"]:hover {
+            background-color:rgba(255, 0, 0, 0.664);
+            color:white;
+           
+        }
+        input[type="reset"]:hover{
+            background-color:rgba(255, 0, 0, 0.664);
+            color:white;
+
+        }
+        input[type="checkbox"]{
+            display: inline-block;
+            position: absolute;
+            left:-30px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <form class="form" action="#" name="form" onsubmit="return validateForm()">
+        <div class="container">
+        <h1>STUDENT REGISTRATION FORM</h1>
+
+        <div class="box" id="sub-box1">
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name" required>
+         
+        </div>
+
+
+        <div class="box" id="sub-box2">
+            <label for="contact_number">age</label>
+            <input type="number" name="contact_number" id="contact_number"  required>
+           
+        </div>
+      
+        <div class="box" id="sub-box3">
+            <label for="DOB">DOB</label>
+            <input type="date" id="DOB" name="DOB" required>
+           
+        </div>
+
+        <div class="box" id="sub-box4">
+            <label>Gender: </label>
+            <div class="box-inline">
+            <label for="male">Male</label>
+            <input type="radio" name="my_gen" id="male">
+            <label for="Female">Female</label>
+            <input type="radio" name="my_gen" id="Female"> 
+            </div>
+           
+        </div>
+
+        <div class="box" id="sub-box5">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+         
+        </div>
+
+
+        <div class="box" id="sub-box6">
+            <label for="checkbox">Are you student?</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+           
+        </div>
+
+        <div class="box" id="sub-box7">
+            <input type="submit" id="sub" name="submit" >
+            <!-- <input type="reset" id="reset" name="reset"> -->
+
+        </div>
+    </div>
+</form>
+    

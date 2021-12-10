@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,p{
+            margin:23px;
+            padding:12px;
+        }
+        h1{
+            text-align: center;
+        }
+        pre{
+            font-size: 20px;
+        }
+        p{
+            font-size: 23px;
+        }
+        body{
+            background-color: rgb(253, 209, 231);
+        }
+        h2{
+            text-align: center;
+            color:red;
+        }
+            </style>
+</head>
+<body>
+    <h1>setTimeout()</h1>
+    <h2>wait 5 second </h2>
+    <p>The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.</p>
+    <pre>
+        <span style="font-size:30px;">Parameters</span>
+
+        <b>function</b>
+        A function to be executed after the timer expires.
+        
+       <b> code</b>
+        An alternative syntax that allows you to include a string instead
+        
+        of a function, which is compiled and executed when the timer expires.
+        This syntax is not recommended for the same reasons that make using eval() a security risk.
+        
+        delay Optional
+        The time, in milliseconds that the timer should wait 
+        before the specified function or code is executed.
+        If this parameter is omitted, a value of 0 is used, 
+        meaning execute "immediately", or more accurately, 
+        the next event cycle. Note that in either case, the 
+        actual delay may be longer than intended; 
+        see Reasons for delays longer than specified below.
+        Return value</pre>
+        <script>
+           function bgchange()
+           {
+           
+           document.body.style.backgroundColor = "aqua";
+           }
+        setTimeout(bgchange,5000)
+        </script>
+</body>
+</html>
